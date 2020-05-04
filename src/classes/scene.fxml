@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="CENTER" hgap="10" prefHeight="195.0" prefWidth="500.0" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="classes.Controller">
+	<children>
+      <VBox prefHeight="200.0" prefWidth="500.0">
+         <children>
+            <Label fx:id="memLbl" text="M" visible="false" />
+      		<TextArea fx:id="display" editable="false" maxWidth="500.0" minWidth="500.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="173.0" prefWidth="500.0" text="0">
+      			<font>
+      				<Font size="24.0" />
+      			</font>
+      		</TextArea>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+            		<Button fx:id="btn1" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#numberBtn" prefHeight="70.0" prefWidth="70.0" text="1">
+            			<font>
+            				<Font size="24.0" />
+            			</font>
+            		</Button>
+            		<Button maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#numberBtn" prefHeight="70.0" prefWidth="70.0" text="2">
+            			<font>
+            				<Font size="24.0" />
+            			</font>
+            		</Button>
+                  <Button layoutX="60.0" layoutY="10.0" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#numberBtn" prefHeight="70.0" prefWidth="70.0" text="3">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="150.0" layoutY="10.0" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#doubleElementOperClick" prefHeight="70.0" prefWidth="70.0" text="+">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="220.0" layoutY="10.0" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#clearBtn" prefHeight="70.0" prefWidth="70.0" text="C">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="290.0" layoutY="10.0" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#clearMBtn" prefHeight="70.0" prefWidth="70.0" text="MC">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="82.0" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#numberBtn" prefHeight="70.0" prefWidth="70.0" text="4">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#numberBtn" prefHeight="70.0" prefWidth="70.0" text="5">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="60.0" layoutY="10.0" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#numberBtn" prefHeight="70.0" prefWidth="70.0" text="6">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="150.0" layoutY="10.0" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#doubleElementOperClick" prefHeight="70.0" prefWidth="70.0" text="-">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#clearEBtn" prefHeight="70.0" prefWidth="70.0" text="CE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="290.0" layoutY="10.0" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#readMBtn" prefHeight="70.0" prefWidth="70.0" text="MR">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="132.0" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#numberBtn" prefHeight="70.0" prefWidth="70.0" text="7">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#numberBtn" prefHeight="70.0" prefWidth="70.0" text="8">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="60.0" layoutY="10.0" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#numberBtn" prefHeight="70.0" prefWidth="70.0" text="9">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="150.0" layoutY="10.0" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#doubleElementOperClick" prefHeight="70.0" prefWidth="70.0" text="*">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button maxHeight="229.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#sqrtBtnClick" prefHeight="70.0" prefWidth="70.0" text="√">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="290.0" layoutY="10.0" maxHeight="229.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#addMClick" prefHeight="70.0" prefWidth="70.0" text="M+">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="182.0" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#numberBtn" prefHeight="70.0" prefWidth="70.0" text="0">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#commaBtn" prefHeight="70.0" prefWidth="70.0" text=",">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="60.0" layoutY="10.0" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#changeSignBtn" prefHeight="70.0" prefWidth="70.0" text="+/-">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="150.0" layoutY="10.0" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#doubleElementOperClick" prefHeight="70.0" prefWidth="70.0" text="/">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#calcBtn" prefHeight="70.0" prefWidth="70.0" text="=">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="290.0" layoutY="10.0" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#subtMClick" prefHeight="70.0" prefWidth="70.0" text="M-">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+	</children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>

@@ -26,7 +26,6 @@ public class Main extends Application {
         calc = new Calc();
     }
 
-
     public static void main(String[] args) {
         launch(args);
     }
